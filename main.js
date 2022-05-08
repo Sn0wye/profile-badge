@@ -15,10 +15,8 @@ function getGitHubProfileInfos(data) {
   userLogin.textContent = data.login;
 }
 
-const downloadButton = document.querySelector("#download");
-
-downloadButton.addEventListener("click", () => {
+function downloadBadge() {
   domtoimage.toBlob(document.getElementById("badge")).then((blob) => {
     window.saveAs(blob, "badge.png");
   });
-});
+}
