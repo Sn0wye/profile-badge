@@ -63,7 +63,8 @@ input {
   margin-right: 0.5rem;
   color: var(--text-primary);
 }
-input:active input:focus {
+input:active,
+input:focus {
   background-color: var(--gray);
 }
 
