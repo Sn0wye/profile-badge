@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Profile Badge Generator</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/images/Github.svg" />
   </head>
   <body>
     <div class="form">
       <input type="text" placeholder="Github Username" id="github" />
       <button onclick="getUser()">Submit</button>
     </div>
+    <button id="download" onclick="downloadBadge()">Download Badge</button>
     <div id="badge">
       <div class="content">
         <div class="avatar">
@@ -19,14 +21,11 @@
         </div>
         <h1 id="userName"></h1>
         <a id="userLink" href="" target="_blank">
-          <img src="./images/Github.svg" alt="Ícone do GitHub" />
+          <img src="./assets/images/Github.svg" alt="Ícone do GitHub" />
           <span id="userLogin"></span>
         </a>
         <p id="userBio"></p>
       </div>
-    </div>
-    <div class="bottom">
-      <button id="download">Download Badge</button>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"
