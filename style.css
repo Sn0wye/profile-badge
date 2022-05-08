@@ -44,6 +44,13 @@ button {
   border-radius: 0.5rem;
   padding: 0.3rem;
   cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+#download {
+  margin-bottom: 1rem;
+}
+button:hover {
+  background: lightgray;
 }
 
 .form input {
@@ -51,7 +58,7 @@ button {
 }
 
 #badge {
-  background: url(images/background.svg);
+  background: url(assets/images/background.svg);
   width: 375px;
   height: 613px;
 }
